@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+span, a{
+    display: inline-block;
+}
+
+input, button{
+    outline: none;
+    border: none;
+}
+
+
+.infiniteSlider:hover{
+    animation-play-state: paused;
+}
+
+@keyframes infiniteSliderAnimation {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.sidebarNav .active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.navlinks .active::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}

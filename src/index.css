@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+    font-family: braked;
+    src: url('/BRAKED.otf');
+}
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: white;
 }
 span, a{
     display: inline-block;

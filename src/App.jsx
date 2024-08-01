@@ -1,18 +1,18 @@
-import React from 'react'
-import Header from './components/Header'
-import MainContent from './components/MainContent'
-import Footer from './components/Footer'
-import CustomCursor from './components/CustomCursor'
+import React, { memo } from 'react'
+import Header from './Components/Header'
+import MainContent from './Components/MainContent'
+// import Footer from './Components/Footer'
+// import CustomCursor from './Components/CustomCursor'
 
 const App = () => {
   return (
-    <div className='min-h-screen w-full bg-[#0A0B0F]'>
+    <div className='min-h-screen w-full'>
       {/* <CustomCursor /> */}
       <Header />
-      {/* <MainContent /> */}
+      <MainContent />
       {/* <Footer/> */}
     </div>
   )
 }
 
-export default App
+export default memo(App)

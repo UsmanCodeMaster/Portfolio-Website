@@ -2,22 +2,18 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
-        <nav className='flex justify-between items-center px-7'>
-            <a href='/'>
-                <img src="Usman.jpg" className='w-32' />
-            </a>
-            <div className='flex justify-center items-center gap-x-7'>
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Services</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+    <header className='fixed top-0 left-0 w-full z-[520]'>
+        <nav className='flex justify-between items-center px-10'>
+            <div>
+                <img src="/UsmanNav.png" className='w-28 mix-blend-difference' />
             </div>
-            <a href='/' className='bg-white text-black px-5 py-3 rounded-[50px]' style={{backgroundColor: "rgba(248, 195, 1, 1)",
-backgroundImage: "linear-gradient(139deg, rgba(248, 195, 1, 1) 0%, rgba(230, 120, 23, 1) 68%)"}}>
-                Download CV
-            </a>
+            <div className='flex justify-center items-center gap-x-8 text-[15px]'>
+                <div>Home</div>
+                <div>Projects</div>
+                <div>Services</div>
+                <div>About</div>
+                <div className=' mix-blend-difference'>Contact</div>
+            </div>
         </nav>
     </header>
   )

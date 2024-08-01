@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: braked;
     src: url('/BRAKED.otf');
 }
 
+
+:root{
+    --dark: white;
+}
+
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-    color: white;
+    color: var(--dark);
 }
 span, a{
     display: inline-block;
@@ -20,20 +25,6 @@ span, a{
 input, button{
     outline: none;
     border: none;
-}
-
-
-.infiniteSlider:hover{
-    animation-play-state: paused;
-}
-
-@keyframes infiniteSliderAnimation {
-    0%{
-        transform: translateX(0%);
-    }
-    100%{
-        transform: translateX(-50%);
-    }
 }
 
 .sidebarNav .active::after{

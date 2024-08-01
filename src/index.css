@@ -7,6 +7,11 @@
     src: url('/BRAKED.otf');
 }
 
+@font-face {
+    font-family: rej;
+    src: url('/Rejouice-Headline.woff2');
+}
+
 
 :root{
     --dark: white;

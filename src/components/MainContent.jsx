@@ -5,6 +5,7 @@ import gsap from "gsap";
 import Page2 from './Page2';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import Page3 from './Page3';
+import Page4 from './Page4';
 
 const MainContent = () => {
   const landingpage = useRef()
@@ -34,8 +35,11 @@ const MainContent = () => {
         <div className='w-full  bg-zinc-950 min-h-screen fixed top-0 left-0 z-[1] flex justify-center items-center'>
           <Page2 />
         </div>
-        <div className='w-full min-h-screen bg-zinc-900 relative z-[3] pt-40'>
+        <div className='w-full min-h-screen bg-zinc-900 relative z-[3] py-40'>
           <Page3 />
+        </div>
+        <div className='relative z-[4] bg-zinc-900'>
+          <Page4 />
         </div>
       </div>
     </main>

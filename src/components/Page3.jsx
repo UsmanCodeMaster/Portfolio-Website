@@ -43,8 +43,8 @@ const Page3 = () => {
 return (
     <div ref={page3}>
         <div className='text-[9vw] leading-[8.5vw]'>
-            <h1 ref={heading1} className='page3Heading w-full pl-[100px]'>Digitally crafted</h1>
-            <h1 ref={heading2} className='page3Heading w-full pl-[150px] text-center'>brand experiences</h1>
+            <h1 ref={heading1} className='page3Heading w-full pl-[120px]'>Digitally crafted</h1>
+            <h1 ref={heading2} className='page3Heading w-full pl-[350px] text-center'>brand projects</h1>
         </div>
         <div className='flex justify-center items-start mt-40'>
             <video ref={video} src="page1-video.mp4" autoPlay loop muted></video>

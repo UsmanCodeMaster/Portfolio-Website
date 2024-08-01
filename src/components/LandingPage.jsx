@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { memo } from 'react'
 
 const LandingPage = () => {
   return (
@@ -19,4 +19,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default memo(LandingPage)

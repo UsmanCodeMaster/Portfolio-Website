@@ -16,9 +16,9 @@ const Page4IMGcontainer = (i) => {
             scrollTrigger: {
                 trigger: a,
                 scroller: "body",
-                start: "top -140%",
-                end: "top -180%",
-                scrub: 1
+                start: "top 50%",
+                end: "top 10%",
+                scrub: 1,
             }
         })
         let img = a.querySelector("img")
@@ -27,8 +27,8 @@ const Page4IMGcontainer = (i) => {
             scrollTrigger: {
                 trigger: a,
                 scroller: "body",
-                start: "top -140%",
-                end: "top -180%",
+                start: "top 50%",
+                end: "top 10%",
                 scrub: 1
             }
         })
@@ -47,8 +47,8 @@ const Page4IMGcontainer = (i) => {
             }
         })
     }
-    prizeAnimation(prizeName.current, -130)
-    prizeAnimation(prize.current, -130.2)
+    prizeAnimation(prizeName.current, 70)
+    prizeAnimation(prize.current, 70.2)
 })
 
   return (

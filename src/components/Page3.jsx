@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { memo, useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from "gsap";
 
@@ -17,10 +17,9 @@ const Page3 = () => {
                 scrollTrigger: {
                     trigger: page3.current,
                     scroller: "body",
-                    start: "top -80%",
-                    end: "top -130%",
+                    start: "top 20%",
+                    end: "top -80%",
                     scrub: 0.5,
-                    markers: true
                 }
             })
         }
@@ -31,10 +30,9 @@ const Page3 = () => {
             scrollTrigger: {
                 trigger: video.current,
                 scroller: "body",
-                start: "top -20%",
-                end: "top -70%",
+                start: "top 90%",
+                end: "top 15%",
                 scrub: 0.5,
-                markers: true
             }
         })
     })
@@ -46,11 +44,11 @@ return (
             <h1 ref={heading1} className='page3Heading w-full pl-[120px]'>Digitally crafted</h1>
             <h1 ref={heading2} className='page3Heading w-full pl-[350px] text-center'>brand projects</h1>
         </div>
-        <div className='flex justify-center items-start mt-40'>
+        <div className='w-full h-screen flex justify-center items-start mt-10'>
             <video ref={video} src="page1-video.mp4" autoPlay loop muted></video>
         </div>
     </div>
   )
 }
 
-export default Page3
+export default memo(Page3)

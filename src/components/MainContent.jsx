@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from "gsap";
 import Page2 from './Page2';
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import Page3 from './Page3';
 
 const MainContent = () => {
   const landingpage = useRef()
@@ -28,12 +29,13 @@ const MainContent = () => {
     <main className='min-h-screen'>
       <div className='relative overflow-hidden'>
         <div ref={landingpage} className='relative z-[2] bg-zinc-900' style={{clipPath: "circle(100% at 50% 50%)"}}>
-            <LandingPage />
+          <LandingPage />
         </div>
         <div className='w-full  bg-zinc-950 min-h-screen fixed top-0 left-0 z-[1] flex justify-center items-center'>
           <Page2 />
         </div>
-        <div className='w-full min-h-screen bg-zinc-900 relative z-[3]'>
+        <div className='w-full min-h-screen bg-zinc-900 relative z-[3] pt-40'>
+          <Page3 />
         </div>
       </div>
     </main>

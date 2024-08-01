@@ -2,7 +2,9 @@ import React from 'react'
 
 const Page2 = () => {
   return (
-    <div>Page2</div>
+    <div className='text-zinc-400 text-[80px] leading-[55px] font-["braked"]'>
+        Projects
+    </div>
   )
 }
 

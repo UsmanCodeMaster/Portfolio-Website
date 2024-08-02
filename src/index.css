@@ -32,6 +32,8 @@ input, button{
     border: none;
 }
 
+.page7 h1, .page7 p, .page7 h4, .page7 h3, .page7 p, .page7 div{color: black}
+
 .sidebarNav .active::after{
     content: "";
     position: absolute;

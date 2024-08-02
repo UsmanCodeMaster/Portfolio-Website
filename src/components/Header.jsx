@@ -10,9 +10,9 @@ const Header = () => {
             <div className='flex justify-center items-center gap-x-8 text-[15px]'>
                 <div>Home</div>
                 <div>Projects</div>
-                <div>Services</div>
+                <div>Skills</div>
                 <div>About</div>
-                <div className=' mix-blend-difference'>Contact</div>
+                <div>Contact</div>
             </div>
         </nav>
     </header>

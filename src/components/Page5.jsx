@@ -18,7 +18,6 @@ const Page5 = () => {
       end: "top -150%",
       pin: true,
       scrub: 1,
-      markers: true
     }})
     tl.to(one.current.querySelector("img"), {
       scale: 1.2

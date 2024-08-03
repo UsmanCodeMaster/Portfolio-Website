@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import Page7SkillComponent from './Page7SkillComponent'
+import FresherDes from './FresherDes'
 
 const Page7 = () => {
   return (
@@ -17,8 +18,7 @@ const Page7 = () => {
         <Page7SkillComponent heading="Backend Development" skills="Node JS, Express JS, Mongoose ODM, Mongo DB, Template Engine (EJS), JWT Authentication, Bcrypt, Flash Messages, ServerSide Rendering => (All Intermediate)" num="3" />
       </div>
       <div className='absolute bottom-8 left-10'>
-        <h4 className='text-[20px] font-["rej"] font-semibold tracking-wider'>Completely Fresher</h4>
-        <p className='w-[350px]'>I have no experience at any software house before, but I will give my best to complete every task assigned to me</p>
+        <FresherDes />
       </div>
     </div>
   )

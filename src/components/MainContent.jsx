@@ -9,6 +9,7 @@ import Page4 from './Page4';
 import Page5 from './Page5';
 import Page6 from './Page6';
 import Page7 from './Page7';
+import Page8 from './Page8';
 
 const MainContent = () => {
   const landingpage = useRef()
@@ -59,8 +60,11 @@ const MainContent = () => {
         <div className='relative z-[17] bg-zinc-950 overflow-hidden'>
           <Page6 />
         </div>
-        <div ref={page7} className='page7 relative z-[18] bg-[#e2e2e2] w-full min-h-screen'>
+        <div ref={page7} className='blackColorTheme relative z-[18] bg-[#e2e2e2] w-full min-h-screen'>
           <Page7 />
+        </div>
+        <div className='blackColorTheme relative z-[18] bg-[#e2b523] w-full min-h-screen'>
+          <Page8 />
         </div>
       </div>
     </main>
